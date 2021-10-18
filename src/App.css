@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,119 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/*body {
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(207, 187, 221, 1) 14%,
+    rgba(218, 182, 214, 1) 16%,
+    rgba(215, 183, 216, 1) 19%,
+    rgba(213, 184, 217, 1) 23%,
+    rgba(170, 165, 214, 1) 27%,
+    rgba(144, 153, 212, 1) 31%,
+    rgba(199, 184, 223, 1) 36%,
+    rgba(58, 178, 226, 1) 39%,
+    rgba(73, 113, 198, 1) 51%,
+    rgba(34, 91, 190, 1) 56%,
+    rgba(49, 101, 196, 1) 61%,
+    rgba(148, 168, 233, 1) 95%
+  );
+}*/
+.all-msg-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.msg-container {
+  border: 2px solid darkblue;
+  max-width: 40rem;
+  border-radius: 25px;
+  background: lightblue;
+  padding: 5px 15px;
+  margin-top: 2rem;
+  text-decoration: none;
+}
+
+/* Nav CSS */
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(#a877d7, #4971c6);
+  padding: 0px 20px;
+  font-family: "Lilita One";
+  padding-right: 50px;
+}
+
+.logo-box {
+  cursor: pointer;
+  margin-left: 90px;
+}
+
+.nav-links {
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: blue;
+  border: solid lightgreen 1px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 03s ease 0s;
+}
+
+button :hover {
+  background-color: coral;
+}
+
+.searchbar {
+  display: flex;
+  box-sizing: border-box;
+  height: 30px;
+}
+
+.searchbar input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+.searchbar button {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  padding: 10px;
+  background: #d93ae2;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+.searchbar button:hover {
+  background: lightblue;
+}
+
+.searchbar:after {
+  content: "";
+  clear: both;
+  display: table;
 }
